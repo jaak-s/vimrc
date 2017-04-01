@@ -10,6 +10,7 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
+Plug 'dyng/ctrlsf.vim'
 call plug#end()
 
 syntax on
