@@ -20,7 +20,7 @@ set relativenumber
 set cursorline
 
 set hidden
-set tabstop=8
+set tabstop=4
 set shiftwidth=4
 set softtabstop=0
 set expandtab
@@ -33,7 +33,7 @@ set pastetoggle=<F2>
 
 autocmd FileType cpp setlocal shiftwidth=2 tabstop=2 sts=2
 au FileType python setl sw=4 sts=0 tabstop=8 et
-au FileType py setl sw=4 sts=0 tabstop=8 et
+au FileType py setl sw=4 sts=0 tabstop=4 et smarttab
 au BufRead,BufNewFile *.c set noexpandtab
 au BufRead,BufNewFile *.h set noexpandtab
 
@@ -98,7 +98,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Setup some default ignores
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)$',
+  \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)|node_modules$',
   \ 'file': '\v\.(exe|so|o|dll|class|png|jpg|jpeg)$',
 \}
 
@@ -135,7 +135,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " NERDTree shortcut
-map <C-m> :NERDTreeFind<CR>
+nnoremap <C-g> :NERDTreeFind<CR>
 
 
 " allowing project specific .vimrc 
