@@ -137,6 +137,8 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " NERDTree shortcut
 nnoremap <C-g> :NERDTreeFind<CR>
 
+" shortcut for CtrlSF
+nnoremap <C-e> :CtrlSFToggle<CR>
 
 " allowing project specific .vimrc 
 set exrc 
