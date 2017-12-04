@@ -11,6 +11,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'dyng/ctrlsf.vim'
+Plug 'fatih/vim-go'
 call plug#end()
 
 syntax on
