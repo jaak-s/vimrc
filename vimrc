@@ -101,6 +101,7 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.(git|hg|svn)|\_site)|node_modules$',
   \ 'file': '\v\.(exe|so|o|dll|class|png|jpg|jpeg)$',
 \}
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 
 " Use the nearest .git directory as the cwd
 " This makes a lot of sense if you are working on a project that is in version
