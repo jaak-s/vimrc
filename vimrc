@@ -12,6 +12,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'dyng/ctrlsf.vim'
 Plug 'fatih/vim-go'
+Plug 'junegunn/vim-easy-align'
 call plug#end()
 
 syntax on
@@ -125,8 +126,6 @@ let g:airline_theme='dark'
 let g:airline#extensions#tabline#fnamemod = ':t'
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-b> :bprevious<CR>
-nnoremap <C-2> :bnext<CR>
-nnoremap <C-1> :bprevious<CR>
 nnoremap <C-w> :bd<CR>
 
 " fugitive
@@ -145,3 +144,9 @@ nnoremap <C-e> :CtrlSFToggle<CR>
 " allowing project specific .vimrc 
 set exrc 
 set secure 
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
