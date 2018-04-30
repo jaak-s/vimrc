@@ -5,6 +5,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jalvesaq/vimcmdline'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 if (has("termguicolors"))
