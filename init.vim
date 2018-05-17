@@ -6,6 +6,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'jalvesaq/vimcmdline'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-fugitive'
+Plug 'qpkorr/vim-bufkill'
 call plug#end()
 
 if (has("termguicolors"))
@@ -53,7 +54,7 @@ vnoremap <C-c> "+y
 
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-b> :bprevious<CR>
-nnoremap <C-w> :bd<CR>
+nnoremap <C-w> :BD<CR>
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
