@@ -7,6 +7,8 @@ Plug 'jalvesaq/vimcmdline'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-fugitive'
 Plug 'qpkorr/vim-bufkill'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 if (has("termguicolors"))
@@ -86,4 +88,13 @@ let cmdline_tmp_dir     = '/tmp' " Temporary directory to save files
 let cmdline_outhl       = 1      " Syntax highlight the output
 let cmdline_app         = {}
 let cmdline_app['python'] = 'ipython3'
+
+" fzf
+nmap <Leader>f :GFiles<CR>
+nmap <Leader>F :Files<CR>
+nmap <Leader>b :Buffers<CR>
+nmap <Leader>h :History<CR>
+nmap <Leader>l :BLines<CR>
+nmap <Leader>L :Lines<CR>
+nmap <Leader>' :Marks<CR>
 
