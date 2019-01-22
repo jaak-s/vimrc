@@ -10,6 +10,7 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 if (has("termguicolors"))
