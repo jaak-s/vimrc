@@ -5,10 +5,16 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jalvesaq/vimcmdline'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 Plug 'qpkorr/vim-bufkill'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 if (has("termguicolors"))
@@ -38,6 +44,8 @@ set smartindent
 set nosmartindent
 
 set pastetoggle=<F2>
+
+set mouse=a
 
 autocmd FileType cpp setlocal shiftwidth=2 tabstop=2 sts=2
 au FileType python setl sw=4 sts=0 tabstop=8 et
