@@ -5,6 +5,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jalvesaq/vimcmdline'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"Plug 'davidhalter/jedi-vim'
+Plug 'deoplete-plugins/deoplete-jedi'
 "Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
@@ -33,6 +35,8 @@ let maplocalleader = ","
 set cursorline
 
 set hidden
+
+let g:go_version_warning = 0
 
 set tabstop=4
 set shiftwidth=4
