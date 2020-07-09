@@ -114,3 +114,5 @@ nmap <Leader>' :Marks<CR>
 "nnoremap gp `[v`]
 nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 
+" disable preview for jedi
+set completeopt-=preview
