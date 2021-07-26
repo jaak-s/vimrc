@@ -18,6 +18,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'dyng/ctrlsf.vim'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 if (has("termguicolors"))
