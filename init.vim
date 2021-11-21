@@ -15,22 +15,30 @@ Plug 'tpope/vim-repeat'
 Plug 'qpkorr/vim-bufkill'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'dyng/ctrlsf.vim'
 Plug 'tpope/vim-commentary'
+Plug 'preservim/tagbar'
 call plug#end()
+
+syntax on
+filetype plugin indent on
+syntax enable
+
+nmap <F8> :TagbarToggle<CR>
 
 if (has("termguicolors"))
   set termguicolors
 endif
 
 " Theme
-syntax enable
 colorscheme OceanicNext
 let g:airline_theme='oceanicnext'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+let g:airline#extensions#tagbar#enabled = 1
+let g:airline#extensions#tagbar#flags = 'f'
 
 let maplocalleader = ","
 
